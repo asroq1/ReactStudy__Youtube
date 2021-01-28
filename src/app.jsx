@@ -7,11 +7,11 @@ const App = () => {
   const [videos, setVideos] = useState([]);
 
   useEffect(()=>{
-    var requestOptions = {
+    const requestOptions = {
       method: 'GET',
       redirect: 'follow'
     };
-    
+
     fetch("https://youtube.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=25&key=AIzaSyCeJxrDd7dd9RaAm8F2h9Dc01OkMrXaoac",
          requestOptions)
 
